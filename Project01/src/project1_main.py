@@ -23,7 +23,7 @@ X = np.zeros((len_gmres))    # = x0
 # Preconditioner
 # Jacobi preconditioner
 precond_ = 'Jacobi'
-M_precond_msr = get_M_msr(JM=Jm_gmres,VM=Vm_gmres,symm=False, precond=precond_)
+M_precond_msr = get_M_msr(JM=Jm_gmres,VM=Vm_gmres,symm=False, precond=precond_)   # get M matrix for Jacobi/ Gauss Seidel preconditioner
 # Gauss Seidel preconditioner
 precond_ = 'GS'
 M_precond_gauss_msr = get_M_msr(JM=Jm_gmres,VM=Vm_gmres,symm=False, precond=precond_)
